@@ -53,8 +53,8 @@ impl Database {
 
     // Print the contents of the database
     fn show(&self) {
-        for pairs in &self.map {
-            println!("  KEY: {}, VALUE: {}", pairs.0, pairs.1);
+        for (key, val) in &self.map {
+            println!("  KEY: {}, VALUE: {}", key, val);
         }
     }
 }
